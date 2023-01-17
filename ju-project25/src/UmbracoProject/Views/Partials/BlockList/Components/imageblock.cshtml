@@ -1,0 +1,11 @@
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+
+@{  
+    var content = (ContentModels.Imageblock)Model.Content;  
+    var image = content.MyMedia;
+    if (image != null) {
+        <img src="@image.Url()" width="300" />
+    }
+}

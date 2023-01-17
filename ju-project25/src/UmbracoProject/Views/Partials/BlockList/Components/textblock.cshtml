@@ -1,0 +1,20 @@
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{  
+    var content = (ContentModels.Textblock)Model.Content;  
+    var myText = content.MyText;
+    var myLongText = content.MyLongText;
+    var myLinks = content.MyLinks;
+
+    if (myText != null) {
+        <p>my text: @myText</p>
+    }
+    if (myLongText != null) {
+        <p>my long text: @myText</p>
+    }
+    if (myLinks != null)
+    {
+        <a href="@myLinks.Url" target="@myLinks.Target">@myLinks.Name</a>
+    }
+}

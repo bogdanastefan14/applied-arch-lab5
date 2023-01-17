@@ -1,0 +1,29 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.MyProfile>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "_Layout";
+}
+
+
+<h1>My Profile</h1>
+@{
+    var name = @Model.Value("myName");
+    if (name != null) {
+        <h2>@Model.Value("myName")</h2>
+    }
+}
+@{
+    var description = @Model.Value("description");
+    if (description != null) {
+        <p>@Model.Value("description")</p>
+    }
+}
+
+@{
+var mainImage = Model.Value<IPublishedContent>("image");
+  if (mainImage != null)
+  {
+    <img src="@mainImage.Url()" width="300" />
+  }
+}

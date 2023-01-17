@@ -1,0 +1,16 @@
+{
+  "Name": "My Profile",
+  "Alias": "MyProfile",
+  "File": "umb://template-file/MyProfile.cshtml",
+  "Master": null,
+  "Udi": "umb://template/8e181c0d3280468e89f0a4e4c0d27c65",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/MyProfile.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "9.4.1"
+}

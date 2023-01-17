@@ -1,0 +1,76 @@
+{
+  "Name": "Portfolio Page",
+  "Alias": "portfolioPage",
+  "DefaultTemplate": "umb://template/da54c7717c074bbeb06422e56865f84a",
+  "AllowedTemplates": [
+    "umb://template/da54c7717c074bbeb06422e56865f84a"
+  ],
+  "HistoryCleanup": {
+    "PreventCleanup": false,
+    "KeepAllVersionsNewerThanDays": null,
+    "KeepLatestVersionPerDayForDays": null
+  },
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": true,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/e66f5127e5074f0aabd7a36834f89254"
+    ]
+  },
+  "Parent": null,
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "b53f3328-e67f-49d2-8020-b89d8b600787",
+      "Name": "Portfolio Group",
+      "SortOrder": 0,
+      "Type": 0,
+      "Alias": "portfolioGroup",
+      "PropertyTypes": [
+        {
+          "Key": "e2302cda-d7a3-4026-9ca6-90e7dd5e58b6",
+          "Alias": "portfolioName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Portfolio Name",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/ed3d80c37dd54384bfa0d384ee0adf89",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/e66f5127e5074f0aabd7a36834f89254",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/da54c7717c074bbeb06422e56865f84a",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.4.1"
+}

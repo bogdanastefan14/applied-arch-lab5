@@ -1,0 +1,23 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ContentPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "_Layout";
+}
+
+
+<h1>My Content</h1>
+@{
+    var name = @Model.Value("contentName");
+    if (name != null) {
+        <h2>@Model.Value("contentName")</h2>
+    }
+}
+@{
+    var description = @Model.Value("contentDescription");
+
+    if (description != null) {
+        <p>@Model.Value("contentDescription")</p>
+    }
+}
+@Html.GetBlockListHtml(Model.MyBlockList)

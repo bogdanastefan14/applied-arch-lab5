@@ -1,0 +1,14 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+    Layout = null;
+    var root = Model.AncestorOrSelf(1);
+}
+
+<a href="/">Home</a>
+
+@if (root.Children().Any() == true)
+{
+    foreach( var item in root.Children()){
+        <li><a href="@item.Url()">@item.Name</a></li>
+    }
+}

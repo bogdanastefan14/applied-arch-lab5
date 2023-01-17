@@ -1,0 +1,67 @@
+{
+  "Name": "Imageblock",
+  "Alias": "imageblock",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "HistoryCleanup": {
+    "PreventCleanup": false,
+    "KeepAllVersionsNewerThanDays": null,
+    "KeepLatestVersionPerDayForDays": null
+  },
+  "Icon": "icon-science",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": true,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/0c6da3339dc043cb8e9c4e77f062aab4",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "79b666e3-ee3b-4825-8ca0-3a779f83078e",
+      "Name": "Imageblock",
+      "SortOrder": 0,
+      "Type": 0,
+      "Alias": "imageblock",
+      "PropertyTypes": [
+        {
+          "Key": "61895ff1-d263-4f3b-9a77-3752d3a7612c",
+          "Alias": "myMedia",
+          "DataType": "umb://data-type/4309a3ea0d784329a06cc80b036af19a",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "myMedia",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/25f5d64eb0664030be9c416cf47ab17d",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/4309a3ea0d784329a06cc80b036af19a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/0c6da3339dc043cb8e9c4e77f062aab4",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.4.2"
+}

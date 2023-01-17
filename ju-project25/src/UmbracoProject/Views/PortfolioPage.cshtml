@@ -1,0 +1,37 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.PortfolioPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "_Layout";
+}
+
+
+<h1>My Portfolio</h1>
+@{
+    var name = @Model.Value("portfolioName");
+    if (name != null) {
+        <h2>@Model.Value("portfolioName")</h2>
+    }
+}
+
+
+
+<p>@Model.Children.Count()</p>
+<span>@DateTime.MinValue</span>
+@{
+    if (@Model.Children.Count() > 0) {
+    
+     var projects = Model
+        .Children()
+        .Where(project => project.Value<DateTime>("projectDate") != DateTime.MinValue)
+        .OrderBy(project => project.Value<DateTime>("projectDate"));
+
+     foreach (var project in projects) {
+        <p>@project.Name()</p>
+        <p>@project.Value("projectDate")</p>
+        <a href="@project.Url()">Project Link</a>
+     }
+    }
+}
+
+

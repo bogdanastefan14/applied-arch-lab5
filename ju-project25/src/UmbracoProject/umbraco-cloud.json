@@ -1,0 +1,26 @@
+{
+  "Deploy": {
+    "Project": {
+      "Name": "ju project25",
+      "Alias": "ju-project25",
+      "Id": "f58e1d67-8e06-4508-8eda-3bb54708883e",
+      "Workspaces": [
+        {
+          "Id": "159f00e1-df69-48b6-9c15-a15b79f31146",
+          "Name": "Live",
+          "Type": "live",
+          "Url": "https://ju-project25.euwest01.umbraco.io"
+        }
+      ]
+    },
+    "Settings": {
+      "ApiKey": "3ABC4C3C4265E3D84F38EA3547087D9017E42A87"
+    }
+  },
+  "Identity": {
+    "ClientId": "0297c0f6-83ad-4481-9ae2-07a3f5475333",
+    "ClientSecret": "Q5~T526ixOHlj47lg7Mu7_.zN1fK.7ua.9",
+    "EnvironmentId": "159f00e1-df69-48b6-9c15-a15b79f31146",
+    "LocalLoginRedirectUri": "https://redirect.identity.umbraco.com"
+  }
+}

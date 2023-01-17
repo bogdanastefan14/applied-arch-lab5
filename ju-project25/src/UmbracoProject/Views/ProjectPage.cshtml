@@ -1,0 +1,36 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ProjectPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "_Layout";
+}
+
+
+<h1>Project Page</h1>
+@{
+    var name = @Model.Value("projectName");
+    if (name != null) {
+        <h2>@name</h2>
+    }
+}
+@{
+    var description = @Model.Value("projectDescription");
+    if (description != null) {
+        <p>@description</p>
+    }
+}
+
+@{
+var projectImage = Model.Value<IPublishedContent>("projectImage");
+  if (projectImage != null)
+  {
+    <img src="@projectImage.Url()" width="300" />
+  }
+}
+
+@{
+    var projectDate = @Model.Value("projectDate");
+    if (projectDate != null) {
+        <p>@projectDate</p>
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "Name": "Content Page - MyBlockList - Block List (1)",
+  "Alias": null,
+  "EditorAlias": "Umbraco.BlockList",
+  "DatabaseType": 0,
+  "Configuration": {"blocks":[{"contentElementTypeKey":"25f5d64e-b066-4030-be9c-416cf47ab17d","label":"myImages","editorSize":"medium","forceHideContentEditorInOverlay":false},{"contentElementTypeKey":"538e1b09-c92a-4b8c-9794-34ac0fb41060","label":"myText","editorSize":"medium","forceHideContentEditorInOverlay":false}],"validationLimit":{},"useLiveEditing":false,"useInlineEditingAsDefault":false},
+  "Parent": null,
+  "Udi": "umb://data-type/be1c57c1a1db4a57b09a46f42e266c9c",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "9.4.2"
+}

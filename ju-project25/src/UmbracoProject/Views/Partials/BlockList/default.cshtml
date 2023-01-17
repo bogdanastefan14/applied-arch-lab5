@@ -1,0 +1,16 @@
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListModel>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+true
+@{
+    if (Model?.Any() != true) { return; }
+}
+<div class="umb-block-list">
+    asdasd
+    @foreach (var block in Model)
+    {
+        if (block?.ContentUdi == null) { continue; }
+        var data = block.Content;
+
+        @await Html.PartialAsync("blocklist/Components/" + data.ContentType.Alias, block)
+    }
+</div>
